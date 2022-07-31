@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ProfNotes" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black_1C</item>
+        <item name="colorPrimaryVariant">@color/grey_94</item>
+        <item name="colorOnPrimary">@color/white_FF</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/dark_grey_29</item>
+        <item name="colorSecondaryVariant">@color/light_coloured_F1</item>
+        <item name="colorOnSecondary">@color/grey_89</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColor">@color/white_FF</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:windowBackground">?attr/colorPrimary</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <style name="LogoTitle">
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="TextH1">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/circe_extrabold</item>
+    </style>
+
+    <style name="TextH1.Large">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextH2">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/circe_bold</item>
+    </style>
+
+    <style name="TextH3">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/circe_bold</item>
+    </style>
+
+    <style name="TextH4">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/circe_bold</item>
+    </style>
+
+    <style name="TextH5">
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/circe_bold</item>
+    </style>
+</resources>
