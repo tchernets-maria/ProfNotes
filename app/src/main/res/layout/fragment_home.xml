@@ -47,6 +47,8 @@
             app:layout_constraintTop_toBottomOf="@+id/tvNewNotes"
             tools:layout_editor_absoluteX="0dp" />
 
+
+
         <TextView
             android:id="@+id/tvMyTasks"
             style="@style/TextH1"
