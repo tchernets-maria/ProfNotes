@@ -16,4 +16,5 @@
     <string name="textViewNewNotes">Новые заметки</string>
     <string name="textViewMyTasks">Мои задачи</string>
     <string name="textViewAllTasks">Все задачи</string>
+    <string name="text_view_greetings">Доброе утро,</string>
 </resources>

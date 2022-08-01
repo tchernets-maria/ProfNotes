@@ -13,11 +13,98 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ivUser"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_test_user"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="25dp"
+            app:riv_oval="true"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvGreetings"
+            style="@style/TextH2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="@string/text_view_greetings"
+            android:textColor="@color/grey_89"
+            app:layout_constraintStart_toEndOf="@+id/ivUser"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ImageView
+            android:id="@+id/ivBull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bull"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/ivUser"
+            tools:layout_editor_absoluteY="29dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivUser">
+
+            <TextView
+                android:id="@+id/tvToday"
+                style="@style/TextH2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сегодня"
+                android:textColor="@color/grey_89" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                style="@style/TextH3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Понедельник, 11 июля" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout1"
+            app:layout_constraintTop_toBottomOf="@+id/ivUser">
+
+            <TextView
+                android:id="@+id/tvNews"
+                style="@style/TextH2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Новости"
+                android:textColor="@color/grey_89" />
+
+            <TextView
+                android:id="@+id/tvNewNote"
+                style="@style/TextH3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 новые заметки" />
+
+        </LinearLayout>
+
         <EditText
             android:id="@+id/edSearch"
             style="@style/TextH3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:background="@drawable/bg_authorization_text"
             android:drawableLeft="@drawable/ic_search"
             android:drawablePadding="10dp"
@@ -26,7 +113,9 @@
             android:padding="12dp"
             android:textColor="@color/white_FF"
             android:textColorHint="@color/grey_89"
-            android:textCursorDrawable="@drawable/edit_text_cursor"/>
+            android:textCursorDrawable="@drawable/edit_text_cursor"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+            tools:layout_editor_absoluteX="0dp" />
 
         <TextView
             android:id="@+id/tvNewNotes"
