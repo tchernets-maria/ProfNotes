@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TheNote">
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dateTextAppearance="@style/TextH2"
+        android:weekDayTextAppearance="@style/TextH1"
+        android:theme="@style/Widget.Material3.MaterialCalendar.Day.Today"/>
+
+    <com.events.calendar.views.EventsCalendar
+        android:id="@+id/eventsCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="always"
+        android:scrollbarThumbHorizontal="@style/TextAppearance.Material3.MaterialTimePicker.Title"
+        app:datesTextSize="14sp"
+        app:eventDotColor="#ff0000"
+        app:isBoldTextOnSelectionEnabled="true"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:monthTitleColor="#ffaa11"
+        app:monthTitleTextSize="28sp"
+        app:primaryTextColor="#c4c4c4"
+        app:secondaryTextColor="#666666"
+        app:weekHeaderColor="#c6c6c6"
+        app:weekHeaderTextSize="14sp" />
+
+    </androidx.core.widget.NestedScrollView>

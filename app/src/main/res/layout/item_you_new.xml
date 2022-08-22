@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_round_card"
+    android:paddingStart="16dp"
+    android:paddingTop="12dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="8dp"
+    android:layout_marginBottom="12dp">
+
+    <TextView
+        android:id="@+id/tvNoteStatus"
+        style="@style/TextH2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="В работе"
+        android:textColor="@color/green_85"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/horizontal_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_94"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNoteStatus" />
+
+    <TextView
+        android:id="@+id/tvDots"
+        style="@style/TextH5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vertical_ellipsis"
+        android:textColor="@color/grey_94"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvNoteTitle"
+        style="@style/TextH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_title"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:lines="1"
+        app:layout_constraintStart_toEndOf="@+id/lineStart"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_divider" />
+
+    <TextView
+        android:id="@+id/tvNoteDescription"
+        style="@style/TextH5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_description"
+        android:layout_marginStart="12dp"
+        android:lines="1"
+        android:textColor="@color/grey_94"
+        app:layout_constraintStart_toEndOf="@+id/lineStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvNoteTitle"/>
+
+    <View
+        android:id="@+id/lineStart"
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        android:background="@color/green_85"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNoteDescription"
+        app:layout_constraintStart_toStartOf="@+id/horizontal_divider"
+        app:layout_constraintTop_toTopOf="@+id/tvNoteTitle" />
+
+    <TextView
+        android:id="@+id/tvChangeStatus"
+        style="@style/TextH5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:drawableStart="@drawable/ic_calendar"
+        android:drawablePadding="6dp"
+        android:text="@string/changeStatus"
+        app:layout_constraintEnd_toStartOf="@+id/tvChangeTime"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineStart" />
+
+    <TextView
+        android:id="@+id/tvChangeTime"
+        style="@style/TextH5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_clock"
+        android:drawablePadding="6dp"
+        android:text="@string/_12_00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvChangeStatus"
+        app:layout_constraintTop_toTopOf="@+id/tvChangeStatus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

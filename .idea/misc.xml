@@ -5,6 +5,8 @@
       <map>
         <entry key="app/src/main/res/drawable/bg_authorization_text.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/bg_button.xml" value="0.2085" />
+        <entry key="app/src/main/res/drawable/bg_image_logo.xml" value="0.2215" />
+        <entry key="app/src/main/res/drawable/bg_round_card.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/bg_splash.xml" value="0.209" />
         <entry key="app/src/main/res/drawable/edit_text_cursor.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/ic_home.xml" value="0.2085" />
@@ -12,9 +14,13 @@
         <entry key="app/src/main/res/drawable/ic_logo.xml" value="0.209" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.28489583333333335" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.28489583333333335" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.28489583333333335" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.28489583333333335" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.28489583333333335" />
+        <entry key="app/src/main/res/layout/fragment_status.xml" value="0.3066143497757848" />
+        <entry key="app/src/main/res/layout/fragment_the_note.xml" value="0.28489583333333335" />
+        <entry key="app/src/main/res/layout/item_new_notes.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/item_you_new.xml" value="0.5" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.28489583333333335" />
       </map>
     </option>

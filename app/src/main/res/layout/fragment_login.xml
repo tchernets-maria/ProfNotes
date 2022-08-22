@@ -108,7 +108,7 @@
                 android:text="@string/hintForgotPassword"
                 android:textColor="@color/grey_89" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnLogin"
                 style="@style/TextH1"
                 android:background="@drawable/bg_button"
@@ -121,5 +121,6 @@
                 android:text="@string/btnLogin"
                 android:textColor="@color/black_1C" />
         </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
