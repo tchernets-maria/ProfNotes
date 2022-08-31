@@ -7,10 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.findNavController
+import dagger.hilt.android.AndroidEntryPoint
 import ru.profsoft.profnotes.R
 import ru.profsoft.profnotes.core.spanString
 import ru.profsoft.profnotes.databinding.FragmentLoginBinding
 
+@AndroidEntryPoint
 class LoginFragment : Fragment() {
 
     private var _binding: FragmentLoginBinding? = null

@@ -1,19 +1,20 @@
 package ru.profsoft.profnotes.ui.home
 
 import android.os.Bundle
-import android.text.SpannableString
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import dagger.hilt.android.AndroidEntryPoint
 import ru.profsoft.profnotes.core.spanStringUnderline
 import ru.profsoft.profnotes.data.model.MyTasks
 import ru.profsoft.profnotes.databinding.FragmentHomeBinding
 import ru.profsoft.profnotes.ui.home.adapter.NewNotesAdapter
+import ru.profsoft.profnotes.viewmodel.HomeViewModel
 
+@AndroidEntryPoint
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
